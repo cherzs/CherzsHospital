@@ -27,5 +27,18 @@
                 parent="hospital_menu_root" 
                 action="action_appointment" 
                 sequence="3"/>
+        <menuitem 
+                id="room_menu" 
+                name="Room" 
+                parent="hospital_menu_root" 
+                action="action_room" 
+                sequence="4"/>
+
+        <menuitem 
+                id="nurse_menu" 
+                name="Nurse" 
+                parent="hospital_menu_root" 
+                action="action_nurse" 
+                sequence="5"/>
     </data>
 </odoo>

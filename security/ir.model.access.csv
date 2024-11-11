@@ -2,3 +2,5 @@ id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_hospital_patient_manager,hospital_patient_manager,model_hospital_patient,base.group_user,1,1,1,1
 access_hospital_doctor_manager,hospital_doctor_manager,model_hospital_doctor,base.group_user,1,1,1,1
 access_hospital_appointment_manager,hospital_appointment_manager,model_hospital_appointment,base.group_user,1,1,1,1
+access_hospital_room_manager,hospital_room_manager,model_hospital_room,base.group_user,1,1,1,1
+access_hospital_nurse_manager,hospital_nurse_manager,model_hospital_nurse,base.group_user,1,1,1,1

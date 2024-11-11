@@ -6,12 +6,14 @@
             <field name="model">hospital.patient</field>
             <field name="arch" type="xml">
                 <tree string="Patient">
-                    <field name="name" />
-                    <field name="age" />
-                    <field name="gender" />
-                    <field name="address" />
-                    <field name="phone" />
-                    <field name="email" />
+                    <field name="name"/>
+                    <field name="patient_id"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <field name="blood_type"/>
+                    <field name="notes"/>
                 </tree>
             </field>
         </record>
@@ -22,18 +24,29 @@
             <field name="arch" type="xml">
                 <form string="Patient">
                     <sheet>
-                        <group>
-                            <group>
-                                <field name="name"/>
-                                <field name="age"/>
-                                <field name="gender"/>
-                            </group>
-                            <group>
-                                <field name="address"/>
-                                <field name="phone"/>
-                                <field name="email"/>
-                            </group>
-                        </group>
+                        <notebook>
+                            <page string="General Information">
+                                <group>
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="patient_id"/>
+                                        <field name="date_of_birth"/>
+                                        <field name="age"/>
+                                        <field name="gender"/>
+                                        <field name="blood_type"/>
+                                    </group>
+                                    <group>
+                                        <field name="address"/>
+                                        <field name="phone"/>
+                                        <field name="email"/>
+                                        <field name="emergency_contact"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Notes">
+                                <field name="notes" placeholder="Enter patient notes here..."/>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -48,6 +61,7 @@
                     <field name="name"/>
                     <field name="age"/>
                     <field name="gender"/>
+                    <field name="notes"/>
                     <templates>
                         <t t-name="kanban-box">
                             <div class="oe_kanban_global_click">
@@ -63,6 +77,9 @@
                                     </div>
                                     <div>
                                         <field name="phone"/>
+                                    </div>
+                                    <div>
+                                        Notes: <field name="notes"/>
                                     </div>
                                 </div>
                             </div>

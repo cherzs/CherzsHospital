@@ -8,6 +8,7 @@ class Appointment(models.Model):
 
     patient_id = fields.Many2one('hospital.patient', string='Patient', tracking=True)
     doctor_id = fields.Many2one('hospital.doctor', string='Doctor', tracking=True)
+    appointment_ids = fields.One2many('hospital.appointment', 'patient_id', string='Appointments')
     appointment_datetime = fields.Datetime(string='Appointment DateTime', tracking=True)
     booking_date = fields.Date(string='Booking Date', default=fields.Date.context_today, tracking=True)
     description = fields.Text(string='Description', tracking=True)
