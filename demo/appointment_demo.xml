@@ -7,6 +7,9 @@
             <field name="doctor_id" ref="demo_doctor_1"/>
             <field name="appointment_datetime">2024-03-15 10:00:00</field>
             <field name="description">Regular checkup</field>
+            <field name="priority">1</field>
+            <field name="state">draft</field>
+            <field name="color">0</field>
         </record>
 
         <record id="demo_appointment_2" model="hospital.appointment">
@@ -14,6 +17,9 @@
             <field name="doctor_id" ref="demo_doctor_2"/>
             <field name="appointment_datetime">2024-03-16 14:30:00</field>
             <field name="description">Follow-up consultation</field>
+            <field name="priority">2</field>
+            <field name="state">confirm</field>
+            <field name="color">3</field>
         </record>
 
         <record id="demo_appointment_3" model="hospital.appointment">
@@ -21,6 +27,9 @@
             <field name="doctor_id" ref="demo_doctor_1"/>
             <field name="appointment_datetime">2024-03-17 09:15:00</field>
             <field name="description">Annual health check</field>
+            <field name="priority">1</field>
+            <field name="state">draft</field>
+            <field name="color">0</field>
         </record>
 
         <record id="demo_appointment_4" model="hospital.appointment">
@@ -28,6 +37,53 @@
             <field name="doctor_id" ref="demo_doctor_2"/>
             <field name="appointment_datetime">2024-03-18 11:45:00</field>
             <field name="description">Initial consultation</field>
+            <field name="priority">2</field>
+            <field name="state">confirm</field>
+            <field name="color">3</field>
+        </record>
+
+        <record id="demo_appointment_5" model="hospital.appointment">
+            <field name="patient_id" ref="demo_patient_5"/>
+            <field name="doctor_id" ref="demo_doctor_3"/>
+            <field name="appointment_datetime">2024-03-19 13:00:00</field>
+            <field name="description">Dental checkup</field>
+            <field name="priority">3</field>
+            <field name="state">done</field>
+            <field name="color">4</field>
+            <field name="medical_notes">Patient reports sensitivity to cold drinks</field>
+        </record>
+
+        <record id="demo_appointment_6" model="hospital.appointment">
+            <field name="patient_id" ref="demo_patient_6"/>
+            <field name="doctor_id" ref="demo_doctor_1"/>
+            <field name="appointment_datetime">2024-03-20 15:30:00</field>
+            <field name="description">Blood pressure monitoring</field>
+            <field name="priority">2</field>
+            <field name="state">cancel</field>
+            <field name="color">2</field>
+            <field name="medical_notes">Patient has history of hypertension</field>
+        </record>
+
+        <record id="demo_appointment_7" model="hospital.appointment">
+            <field name="patient_id" ref="demo_patient_7"/>
+            <field name="doctor_id" ref="demo_doctor_2"/>
+            <field name="appointment_datetime">2024-03-21 08:00:00</field>
+            <field name="description">Diabetes consultation</field>
+            <field name="priority">1</field>
+            <field name="state">in_consultation</field>
+            <field name="color">5</field>
+            <field name="medical_notes">Regular diabetes check and medication review</field>
+        </record>
+
+        <record id="demo_appointment_8" model="hospital.appointment">
+            <field name="patient_id" ref="demo_patient_8"/>
+            <field name="doctor_id" ref="demo_doctor_3"/>
+            <field name="appointment_datetime">2024-03-22 10:45:00</field>
+            <field name="description">Post-surgery follow up</field>
+            <field name="priority">3</field>
+            <field name="state">done</field>
+            <field name="color">4</field>
+            <field name="medical_notes">Wound healing properly, continue prescribed medication</field>
         </record>
     </data>
 </odoo> 

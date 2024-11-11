@@ -8,8 +8,7 @@
     "category": "Hospital",
     "depends": ["base", "mail"],
     "data": [
-        "security/hospital_security.xml",
-        "data/sequence.xml",
+        "security/ir.model.access.csv",
         "views/patient_view.xml",
         "views/doctor_view.xml",
         "views/appointment_view.xml",

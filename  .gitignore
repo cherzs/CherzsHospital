@@ -1,1 +1,6 @@
 pylint-odoo.log
+
+.idea/
+.vscode/
+pycache/
+__pycache__/
