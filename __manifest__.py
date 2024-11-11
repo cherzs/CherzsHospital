@@ -22,5 +22,5 @@
     "auto_install": False,
     "application": True,
     "license": "LGPL-3",
-    "images": ["static/description/icon.png"],
+    "images": ["static/description/icon.png"]
 }
