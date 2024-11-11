@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Demo Data untuk Pasien -->
+        <record id="demo_patient_1" model="hospital.patient">
+            <field name="name">John Doe</field>
+            <field name="age">30</field>
+            <field name="gender">male</field>
+            <field name="address">123 Main St, New York</field>
+            <field name="phone">+1234567890</field>
+            <field name="email">john.doe@example.com</field>
+        </record>
+
+        <record id="demo_patient_2" model="hospital.patient">
+            <field name="name">Jane Smith</field>
+            <field name="age">25</field>
+            <field name="gender">female</field>
+            <field name="address">456 Park Ave, Los Angeles</field>
+            <field name="phone">+0987654321</field>
+            <field name="email">jane.smith@example.com</field>
+        </record>
+
+        <record id="demo_patient_3" model="hospital.patient">
+            <field name="name">Michael Johnson</field>
+            <field name="age">45</field>
+            <field name="gender">male</field>
+            <field name="address">789 Oak Road, Chicago</field>
+            <field name="phone">+1122334455</field>
+            <field name="email">michael.j@example.com</field>
+        </record>
+
+        <record id="demo_patient_4" model="hospital.patient">
+            <field name="name">Emily Brown</field>
+            <field name="age">28</field>
+            <field name="gender">female</field>
+            <field name="address">321 Pine St, San Francisco</field>
+            <field name="phone">+5544332211</field>
+            <field name="email">emily.b@example.com</field>
+        </record>
+
+        <record id="demo_patient_5" model="hospital.patient">
+            <field name="name">David Wilson</field>
+            <field name="age">35</field>
+            <field name="gender">male</field>
+            <field name="address">654 Maple Ave, Boston</field>
+            <field name="phone">+9988776655</field>
+            <field name="email">david.w@example.com</field>
+        </record>
+
+        <record id="demo_patient_6" model="hospital.patient">
+            <field name="name">Sarah Davis</field>
+            <field name="age">32</field>
+            <field name="gender">female</field>
+            <field name="address">987 Cedar Lane, Seattle</field>
+            <field name="phone">+3322114455</field>
+            <field name="email">sarah.d@example.com</field>
+        </record>
+    </data>
+</odoo> 

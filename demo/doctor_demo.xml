@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Demo Data untuk Dokter -->
+        <record id="demo_doctor_1" model="hospital.doctor">
+            <field name="name">Dr. Robert Wilson</field>
+            <field name="specialization">Cardiologist</field>
+            <field name="phone">+1122334455</field>
+            <field name="email">dr.wilson@example.com</field>
+        </record>
+
+        <record id="demo_doctor_2" model="hospital.doctor">
+            <field name="name">Dr. Sarah Johnson</field>
+            <field name="specialization">Pediatrician</field>
+            <field name="phone">+5544332211</field>
+            <field name="email">dr.johnson@example.com</field>
+        </record>
+
+        <record id="demo_doctor_3" model="hospital.doctor">
+            <field name="name">Dr. Michael Brown</field>
+            <field name="specialization">Neurologist</field>
+            <field name="phone">+6677889900</field>
+            <field name="email">dr.brown@example.com</field>
+        </record>
+
+        <record id="demo_doctor_4" model="hospital.doctor">
+            <field name="name">Dr. Emily Davis</field>
+            <field name="specialization">Dermatologist</field>
+            <field name="phone">+1122334455</field>
+            <field name="email">dr.davis@example.com</field>
+        </record>
+    </data>
+</odoo> 

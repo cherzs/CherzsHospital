@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem 
+                id="hospital_menu_root" 
+                name="Cherz Hospital" 
+                web_icon="hospital,static/description/icon.png"
+                sequence="100"/>
+
+        <menuitem 
+                id="patient_menu" 
+                name="Patient" 
+                parent="hospital_menu_root" 
+                action="action_patient" 
+                sequence="1"/>
+
+        <menuitem 
+                id="doctor_menu" 
+                name="Doctor" 
+                parent="hospital_menu_root" 
+                action="action_doctor" 
+                sequence="2"/>
+                
+        <menuitem 
+                id="appointment_menu" 
+                name="Appointment" 
+                parent="hospital_menu_root" 
+                action="action_appointment" 
+                sequence="3"/>
+    </data>
+</odoo>
