@@ -6,9 +6,10 @@
     "description": "Cherz Hospital",
     "author": "Cherz Hospital",
     "category": "Hospital",
-    "depends": ["base"],
+    "depends": ["base", "mail"],
     "data": [
-        "security/ir.model.access.csv",
+        "security/hospital_security.xml",
+        "data/sequence.xml",
         "views/patient_view.xml",
         "views/doctor_view.xml",
         "views/appointment_view.xml",

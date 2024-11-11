@@ -4,7 +4,7 @@
         <menuitem 
                 id="hospital_menu_root" 
                 name="Cherz Hospital" 
-                web_icon="hospital,static/description/icon.png"
+                web_icon="CherzsHospital,static/description/icon.png"
                 sequence="100"/>
 
         <menuitem 
