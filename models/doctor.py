@@ -10,3 +10,4 @@ class Doctor(models.Model):
     phone = fields.Char(string='Phone')
     email = fields.Char(string='Email')
     address = fields.Text(string='Address')
+    avatar_128 = fields.Image(string='Avatar', max_width=128, max_height=128)

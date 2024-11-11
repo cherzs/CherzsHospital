@@ -14,4 +14,5 @@ class Nurse(models.Model):
         ('afternoon', 'Afternoon'),
         ('night', 'Night')
     ], string='Shift', required=True)
-    patient_id = fields.Many2many('hospital.patient', string='Patients') 
+    patient_id = fields.Many2many('hospital.patient', string='Patients')  # Corrected field name
+    avatar_128 = fields.Image(string='Avatar', max_width=128, max_height=128)  # Add this line
