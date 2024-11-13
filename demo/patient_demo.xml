@@ -59,7 +59,7 @@
             <field name="address">654 Maple Ave, Boston</field>
             <field name="phone">+9988776655</field>
             <field name="email">david.w@example.com</field>
-            <field name="notes">Annual physical examination.</field>
+            <field name="notes">New doctor added for testing purposes.</field>
         </record>
 
         <record id="demo_patient_6" model="hospital.patient">

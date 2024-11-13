@@ -45,6 +45,23 @@
             </field>
         </record>
 
+        <record id="view_room_search" model="ir.ui.view">
+            <field name="name">Room Search</field>
+            <field name="model">hospital.room</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="room_number"/>
+                    <filter string="ICU" domain="[('room_type', '=', 'icu')]" />
+                    <filter string="General" domain="[('room_type', '=', 'general')]" />
+                    <filter string="Private" domain="[('room_type', '=', 'private')]" />
+                    <group expand="1" string="Group By">
+                        <filter string="Type" context="{'group_by': 'room_type'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        
         <!-- Action -->
         <record id="action_room" model="ir.actions.act_window">
             <field name="name">Rooms</field>

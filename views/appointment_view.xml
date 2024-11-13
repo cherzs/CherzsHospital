@@ -147,6 +147,25 @@
             </field>
         </record>
 
+        <record id="view_appointment_search" model="ir.ui.view">
+            <field name="name">Appointment Search</field>
+            <field name="model">hospital.appointment</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="reference"/>
+                    <field name="patient_id"/>
+                    <field name="doctor_id"/>
+                    <filter string="Draft" domain="[('state', '=', 'draft')]" />
+                    <filter string="Confirmed" domain="[('state', '=', 'confirm')]" />
+                    <filter string="Done" domain="[('state', '=', 'done')]" />
+                    <filter string="Cancelled" domain="[('state', '=', 'cancel')]" />
+                    <group expand="1" string="Group By">
+                        <filter string="State" context="{'group_by': 'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
         <!-- Kemudian referensikan view dalam action -->
         <record id="action_appointment" model="ir.actions.act_window">
             <field name="name">Appointment</field>

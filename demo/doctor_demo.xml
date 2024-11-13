@@ -1,33 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Demo Data untuk Dokter -->
+        <!-- Demo Data for Doctors -->
         <record id="demo_doctor_1" model="hospital.doctor">
             <field name="name">Dr. Robert Wilson</field>
+            <field name="doctor_id">D001</field>
             <field name="specialization">Cardiologist</field>
             <field name="phone">+1122334455</field>
             <field name="email">dr.wilson@example.com</field>
+            <field name="doctor_type">permanent</field>
         </record>
 
         <record id="demo_doctor_2" model="hospital.doctor">
             <field name="name">Dr. Sarah Johnson</field>
+            <field name="doctor_id">D002</field>
             <field name="specialization">Pediatrician</field>
             <field name="phone">+5544332211</field>
             <field name="email">dr.johnson@example.com</field>
+            <field name="doctor_type">intern</field>
         </record>
 
         <record id="demo_doctor_3" model="hospital.doctor">
             <field name="name">Dr. Michael Brown</field>
+            <field name="doctor_id">D003</field>
             <field name="specialization">Neurologist</field>
             <field name="phone">+6677889900</field>
             <field name="email">dr.brown@example.com</field>
+            <field name="doctor_type">visiting</field>
         </record>
 
         <record id="demo_doctor_4" model="hospital.doctor">
             <field name="name">Dr. Emily Davis</field>
+            <field name="doctor_id">D004</field>
             <field name="specialization">Dermatologist</field>
             <field name="phone">+1122334455</field>
             <field name="email">dr.davis@example.com</field>
+            <field name="doctor_type">permanent</field>
+        </record>
+
+        <record id="demo_doctor_5" model="hospital.doctor">
+            <field name="name">Dr. New Doctor</field>
+            <field name="doctor_id">D005</field>
+            <field name="specialization">General Practitioner</field>
+            <field name="phone">+1234567890</field>
+            <field name="email">dr.new@example.com</field>
+            <field name="doctor_type">permanent</field>
+        </record>
+
+        <record id="demo_doctor_6" model="hospital.doctor">
+            <field name="name">Dr. New Doctor 2</field>
+            <field name="doctor_id">D006</field>
+            <field name="specialization">General Practitioner</field>
+            <field name="phone">+1234567890</field>
+            <field name="email">dr.new2@example.com</field>
+            <field name="doctor_type">permanent</field>
         </record>
     </data>
 </odoo> 

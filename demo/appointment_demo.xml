@@ -22,7 +22,7 @@
         <record id="demo_appointment_3" model="hospital.appointment">
             <field name="reference">AP003</field>
             <field name="patient_id" ref="demo_patient_3"/>
-            <field name="doctor_id" ref="demo_doctor_1"/>
+            <field name="doctor_id" ref="demo_doctor_3"/>
             <field name="appointment_datetime">2024-12-17 09:15:00</field>
             <field name="priority">1</field>
             <field name="state">draft</field>
@@ -31,7 +31,7 @@
         <record id="demo_appointment_4" model="hospital.appointment">
             <field name="reference">AP004</field>
             <field name="patient_id" ref="demo_patient_4"/>
-            <field name="doctor_id" ref="demo_doctor_2"/>
+            <field name="doctor_id" ref="demo_doctor_4"/>
             <field name="appointment_datetime">2024-12-18 11:45:00</field>
             <field name="priority">2</field>
             <field name="state">confirm</field>
@@ -40,7 +40,7 @@
         <record id="demo_appointment_5" model="hospital.appointment">
             <field name="reference">AP005</field>
             <field name="patient_id" ref="demo_patient_5"/>
-            <field name="doctor_id" ref="demo_doctor_3"/>
+            <field name="doctor_id" ref="demo_doctor_5"/>
             <field name="appointment_datetime">2024-12-19 13:00:00</field>
             <field name="priority">3</field>
             <field name="state">done</field>
@@ -49,7 +49,7 @@
         <record id="demo_appointment_6" model="hospital.appointment">
             <field name="reference">AP006</field>
             <field name="patient_id" ref="demo_patient_6"/>
-            <field name="doctor_id" ref="demo_doctor_1"/>
+            <field name="doctor_id" ref="demo_doctor_6"/>
             <field name="appointment_datetime">2024-12-20 15:30:00</field>
             <field name="priority">2</field>
             <field name="state">cancel</field>

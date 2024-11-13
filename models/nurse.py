@@ -3,6 +3,7 @@ from odoo import models, fields
 class Nurse(models.Model):
     _name = 'hospital.nurse'
     _description = 'Nurse'
+    
 
     name = fields.Char(string='Name', required=True)
     nurse_id = fields.Char(string='Nurse ID', required=True)
@@ -14,5 +15,10 @@ class Nurse(models.Model):
         ('afternoon', 'Afternoon'),
         ('night', 'Night')
     ], string='Shift', required=True)
-    patient_id = fields.Many2many('hospital.patient', string='Patients')  # Corrected field name
-    avatar_128 = fields.Image(string='Avatar', max_width=128, max_height=128)  # Add this line
+    patient_ids = fields.Many2many('hospital.patient', string='Patients')
+    avatar_128 = fields.Image(string='Avatar', max_width=128, max_height=128)
+    nurse_type = fields.Selection([
+        ('head', 'Head Nurse'),
+        ('staff', 'Staff Nurse'),
+        ('trainee', 'Trainee Nurse')
+    ], string='Nurse Type', required=True, default='staff')
