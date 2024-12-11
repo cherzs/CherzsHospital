@@ -7,7 +7,7 @@
             <field name="doctor_id" ref="demo_doctor_1"/>
             <field name="appointment_datetime">2024-12-15 10:00:00</field>
             <field name="priority">1</field>
-            <field name="state">draft</field>
+            <field name="state"></field>
         </record>
 
         <record id="demo_appointment_2" model="hospital.appointment">

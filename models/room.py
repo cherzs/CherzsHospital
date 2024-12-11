@@ -1,16 +1,26 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
-class Room(models.Model):
+class HospitalRoom(models.Model):
     _name = 'hospital.room'
     _description = 'Hospital Room'
 
-    name = fields.Char(string='Room Name', required=True)
+    name = fields.Char(string='Name', required=True)
     room_number = fields.Char(string='Room Number', required=True)
     room_type = fields.Selection([
-        ('single', 'Single'),
-        ('double', 'Double'),
-        ('suite', 'Suite')
+        ('general', 'General Ward'),
+        ('private', 'Private Room'),
+        ('icu', 'ICU'),
+        ('operation', 'Operation Theater'),
     ], string='Room Type', required=True)
-    capacity = fields.Integer(string='Capacity', default=1)
-    is_available = fields.Boolean(string='Is Available', default=True)
-    patient_id = fields.One2many('hospital.patient', 'room_id', string='Patients') 
+    capacity = fields.Integer(string='Capacity')
+    status = fields.Selection([
+        ('available', 'Available'),
+        ('occupied', 'Occupied'),
+        ('maintenance', 'Under Maintenance'),
+    ], string='Status', default='available')
+    notes = fields.Text(string='Notes')
+
+    _sql_constraints = [
+        ('unique_room_number', 'unique(room_number)', 'Room number must be unique!')
+    ]
+ 
